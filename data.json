@@ -1,0 +1,146 @@
+{
+  "firstname": "Ilya",
+  "lastname": "Zaitsev",
+  "avatar": "",
+  "age": 21,
+  "location": "",
+  "profession": "Frontend Developer",
+  "contacts": [
+    {
+      "name": "Phone",
+      "type": "phone",
+      "value": "380684006684"
+    },
+    {
+      "name": "LinkedIn",
+      "type": "link",
+      "value": "https://www.linkedin.com/in/godested/"
+    },
+    {
+      "name": "GitHub",
+      "type": "link",
+      "value": "https://www.github.com/godested/"
+    },
+    {
+      "name": "Email",
+      "type": "email",
+      "value": "godested@gmail.com"
+    }
+  ],
+  "skills": [
+    {
+      "name": "HTML",
+      "icon": ""
+    },
+    {
+      "name": "CSS",
+      "icon": ""
+    },
+    {
+      "name": "JavaScript",
+      "icon": ""
+    },
+    {
+      "name": "TypeScript",
+      "icon": ""
+    },
+    {
+      "name": "React",
+      "icon": ""
+    },
+    {
+      "name": "Redux",
+      "icon": ""
+    },
+    {
+      "name": "Sass",
+      "icon": ""
+    },
+    {
+      "name": "Node",
+      "icon": ""
+    },
+    {
+      "name": "REST",
+      "icon": ""
+    }
+  ],
+  "tools": [
+    {
+      "name": "Webpack",
+      "icon": ""
+    },
+    {
+      "name": "Gulp",
+      "icon": ""
+    },
+    {
+      "name": "Babel",
+      "icon": ""
+    },
+    {
+      "name": "ESLint",
+      "icon": ""
+    },
+    {
+      "name": "Git",
+      "icon": ""
+    },
+    {
+      "name": "Jst",
+      "icon": ""
+    },
+    {
+      "name": "Bash",
+      "icon": ""
+    }
+  ],
+  "experience": [
+    {
+      "name": "Genesis",
+      "fromDate": "2019-03",
+      "toDate": null
+    },
+    {
+      "name": "Skywell Software",
+      "fromDate": "2018-10",
+      "toDate": "2019-03"
+    }
+  ],
+  "education": [
+    {
+      "name": "Hillel IT School. Frontend Basic",
+      "fromDate": "2017-06",
+      "toDate": "2017-08",
+      "labels": ["Excellent"]
+    },
+    {
+      "name": "Skywell Software",
+      "fromDate": "2018-10",
+      "toDate": "2019-03"
+    }
+  ],
+  "bestProjects": [
+    {
+      "name": "Bananame.club",
+      "description": "",
+      "tools": [
+        {
+          "name": "React",
+          "icon": ""
+        },
+        {
+          "name": "Redux",
+          "icon": ""
+        },
+        {
+          "name": "Redux-saga",
+          "icon": ""
+        }
+      ],
+      "fromDate": "2019-03",
+      "toDate": "2019-07",
+      "position": "Lead Frontend Developer"
+    }
+  ]
+}

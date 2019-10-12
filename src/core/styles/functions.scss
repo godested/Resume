@@ -1,0 +1,9 @@
+@import './variables';
+
+@function get-rem($pixels, $context: $rootFontSize) {
+  @return $pixels / $context + rem;
+}
+
+@function get-em($pixels, $context) {
+  @return $pixels / $context + em;
+}

@@ -1,0 +1,49 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "airbnb",
+    "prettier",
+    "prettier/@typescript-eslint",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "plugins": ["prettier", "@typescript-eslint", "import"],
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "settings": {
+    "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript": {
+        "extensions": [".ts", ".tsx"]
+      },
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "rules": {
+    "no-console": "off",
+    "global-require": "off",
+    "prettier/prettier": "error",
+    "react/prefer-stateless-function": "off",
+    "no-param-reassign": "off",
+    "react/prop-types": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".jsx", ".tsx"] }],
+    "arrow-parens": "off",
+    "import/prefer-default-export": "off",
+    "import/no-unresolved": "off",
+    "max-len": ["error", 120],
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/indent": "off",
+    "@typescript-eslint/explicit-function-return-type": "off"
+  }
+}

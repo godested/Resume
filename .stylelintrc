@@ -1,0 +1,39 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-css-modules"
+  ],
+  "plugins": [
+    "stylelint-scss",
+    "stylelint-order"
+  ],
+  "rules": {
+    "order/properties-order": [
+      "content",
+      "display",
+      "position",
+      "z-index",
+      "top",
+      "right",
+      "bottom",
+      "left",
+    ],
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "function",
+          "return",
+          "if",
+          "content",
+          "each",
+          "include",
+          "extend",
+          "mixin"
+        ]
+      }
+    ],
+    "scss/selector-no-redundant-nesting-selector": true,
+    "number-leading-zero": null
+  }
+}
