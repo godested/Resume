@@ -1,0 +1,36 @@
+@import 'core/styles/functions';
+@import 'core/styles/mixins';
+
+.Section {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.Heading {
+  font-size: get-rem(36);
+}
+
+.Title {
+  font-size: get-rem(18);
+}
+
+@include screenMd() {
+  .Heading {
+    font-size: get-rem(60);
+  }
+
+  .Title {
+    font-size: get-rem(30);
+  }
+}
+
+@include screenLg() {
+  .Heading {
+    font-size: get-rem(80);
+  }
+
+  .Title {
+    font-size: get-rem(40);
+  }
+}

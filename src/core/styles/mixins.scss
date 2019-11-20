@@ -1,0 +1,13 @@
+@import './variables';
+
+@mixin screenMd() {
+  @media screen and (min-width: $screenMd) {
+    @content;
+  }
+}
+
+@mixin screenLg() {
+  @media screen and (min-width: $screenLg) {
+    @content;
+  }
+}

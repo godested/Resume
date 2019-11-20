@@ -1,0 +1,139 @@
+@import 'core/styles/colors';
+@import 'core/styles/variables';
+@import 'core/styles/functions';
+
+.Typography {
+  display: block;
+  text-align: inherit;
+  word-wrap: break-word;
+  letter-spacing: 0;
+  line-height: 1.1;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+  text-decoration: none;
+
+  &--heading {
+    font-size: get-rem(28);
+    font-weight: 600;
+  }
+
+  &--subheading {
+    font-size: get-rem(24);
+    font-weight: 600;
+  }
+
+  &--title {
+    font-size: get-rem(18);
+    font-weight: 500;
+  }
+
+  &--subtitle {
+    font-size: get-rem(16);
+    font-weight: 500;
+  }
+
+  &--body {
+    font-size: get-rem(16);
+    font-weight: 400;
+  }
+
+  &--caption {
+    font-size: get-rem(14);
+    font-weight: 400;
+  }
+
+  &--tip {
+    font-size: get-rem(10);
+    font-weight: 400;
+  }
+
+  // Colors
+  &--color-black {
+    color: $black;
+  }
+
+  &--color-white {
+    color: $white;
+  }
+
+  &--color-primary {
+    color: $primary;
+  }
+
+  &--color-secondary {
+    color: $secondary;
+  }
+
+  &--color-inherit {
+    color: inherit;
+  }
+
+  &--align-left {
+    text-align: left;
+  }
+
+  &--align-center {
+    text-align: center;
+  }
+
+  &--align-right {
+    text-align: right;
+  }
+
+  &--marginBottom-xs {
+    margin-bottom: 8px;
+  }
+
+  &--marginBottom-sm {
+    margin-bottom: 16px;
+  }
+
+  &--marginBottom-md {
+    margin-bottom: 20px;
+  }
+
+  &--marginBottom-lg {
+    margin-bottom: 30px;
+  }
+
+  &--marginBottom-xl {
+    margin-bottom: 50px;
+  }
+
+  &--weight-regular {
+    font-weight: 400;
+  }
+
+  &--weight-medium {
+    font-weight: 500;
+  }
+
+  &--weight-bold {
+    font-weight: 600;
+  }
+
+  &--inline {
+    display: inline;
+  }
+
+  &--font-primary {
+    font-family: $mainFont;
+  }
+
+  &--font-secondary {
+    font-family: $secondaryFont;
+  }
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+
+  &--italic {
+    font-style: italic;
+  }
+
+  &--underline {
+    text-decoration: underline;
+  }
+}

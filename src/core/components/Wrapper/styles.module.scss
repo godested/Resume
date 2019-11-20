@@ -1,0 +1,22 @@
+@import 'core/styles/variables';
+@import 'core/styles/mixins';
+
+.Wrapper {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 12px;
+}
+
+@include screenMd() {
+  .Wrapper {
+    padding: 0 20px;
+    max-width: $screenLg;
+  }
+}
+
+@include screenLg() {
+  .Wrapper {
+    padding: 0 40px;
+    max-width: $screenXl;
+  }
+}

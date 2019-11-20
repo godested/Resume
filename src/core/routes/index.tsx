@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch } from 'react-router-dom';
-import { Route } from 'components/Route';
-import { NotFound } from 'pages/NotFound';
+import { Route } from 'core/components/Route';
+import NotFound from 'pages/NotFound';
 import { ROUTES } from './constants';
 
 const routesToRender = Object.values(ROUTES);
