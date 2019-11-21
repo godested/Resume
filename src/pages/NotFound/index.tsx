@@ -8,13 +8,13 @@ import classes from './styles.module.scss';
 export default function NotFound() {
   return (
     <Page title="404">
-      <main className={classes.Section}>
+      <section className={classes.Section}>
         <Wrapper>
           <Typography align="center" className={classes.Title} component="h2">
             <Glitch>404</Glitch>
           </Typography>
         </Wrapper>
-      </main>
+      </section>
     </Page>
   );
 }

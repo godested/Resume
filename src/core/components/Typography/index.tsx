@@ -43,7 +43,7 @@ export function Typography(props: Props) {
     font = 'primary',
     variant = 'body',
     component: Component = defaultComponentsMap[variant] || 'span',
-    color = 'black',
+    color = 'white',
     marginBottom,
     noWrap,
     align,
