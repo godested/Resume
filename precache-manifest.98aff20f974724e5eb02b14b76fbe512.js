@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ad9c747479e6873970010e2bf1928af3",
+    "revision": "92fab0a241b435f8fd876781c819da59",
     "url": "https://godested.github.io/resume/index.html"
   },
   {
@@ -12,7 +12,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://godested.github.io/resume/static/css/completion.d94c2d7c.chunk.css"
   },
   {
-    "revision": "01fc1814c085459dbb85",
+    "revision": "5f1b54e5cc46d2e89f8f",
     "url": "https://godested.github.io/resume/static/css/main.a28ce085.chunk.css"
   },
   {
@@ -28,8 +28,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "https://godested.github.io/resume/static/js/completion.14195f15.chunk.js"
   },
   {
-    "revision": "01fc1814c085459dbb85",
-    "url": "https://godested.github.io/resume/static/js/main.0e84d85c.chunk.js"
+    "revision": "5f1b54e5cc46d2e89f8f",
+    "url": "https://godested.github.io/resume/static/js/main.1e6e3875.chunk.js"
   },
   {
     "revision": "2ce95a5a7bcc941ba68b",
