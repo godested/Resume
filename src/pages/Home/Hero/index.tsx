@@ -12,33 +12,31 @@ export function Hero() {
   const fullName = `${lastname} ${firstname}`;
 
   return (
-    <>
+    <div className={classes.Section}>
       <Background />
-      <section className={classes.Section}>
-        <Wrapper>
-          <Typography
-            font="secondary"
-            variant="heading"
-            weight="regular"
-            align="center"
-            component="h1"
-            marginBottom="sm"
-            uppercase
-            className={classes.Heading}
-          >
-            <Glitch>{fullName}</Glitch>
-          </Typography>
-          <Typography
-            variant="title"
-            align="center"
-            uppercase
-            weight="regular"
-            className={classes.Title}
-          >
-            {profession}
-          </Typography>
-        </Wrapper>
-      </section>
-    </>
+      <Wrapper className={classes.Container}>
+        <Typography
+          font="secondary"
+          variant="heading"
+          weight="regular"
+          align="center"
+          component="h1"
+          marginBottom="sm"
+          uppercase
+          className={classes.Heading}
+        >
+          <Glitch>{fullName}</Glitch>
+        </Typography>
+        <Typography
+          variant="title"
+          align="center"
+          uppercase
+          weight="regular"
+          className={classes.Title}
+        >
+          {profession}
+        </Typography>
+      </Wrapper>
+    </div>
   );
 }
