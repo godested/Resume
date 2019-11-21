@@ -1,30 +1,30 @@
 {
   "files": {
-    "completion.css": "/godested/resume/static/css/completion.d94c2d7c.chunk.css",
-    "completion.js": "/godested/resume/static/js/completion.09cf6f7f.chunk.js",
-    "completion.js.map": "/godested/resume/static/js/completion.09cf6f7f.chunk.js.map",
-    "main.css": "/godested/resume/static/css/main.b3918ccc.chunk.css",
-    "main.js": "/godested/resume/static/js/main.69b825d4.chunk.js",
-    "main.js.map": "/godested/resume/static/js/main.69b825d4.chunk.js.map",
-    "runtime-main.js": "/godested/resume/static/js/runtime-main.f74565d3.js",
-    "runtime-main.js.map": "/godested/resume/static/js/runtime-main.f74565d3.js.map",
-    "static/css/3.764ccc25.chunk.css": "/godested/resume/static/css/3.764ccc25.chunk.css",
-    "static/js/3.ab14c5f7.chunk.js": "/godested/resume/static/js/3.ab14c5f7.chunk.js",
-    "static/js/3.ab14c5f7.chunk.js.map": "/godested/resume/static/js/3.ab14c5f7.chunk.js.map",
-    "static/js/4.332088ad.chunk.js": "/godested/resume/static/js/4.332088ad.chunk.js",
-    "static/js/4.332088ad.chunk.js.map": "/godested/resume/static/js/4.332088ad.chunk.js.map",
-    "index.html": "/godested/resume/index.html",
-    "precache-manifest.e67499f571ac3a445dae03a00ab7856e.js": "/godested/resume/precache-manifest.e67499f571ac3a445dae03a00ab7856e.js",
-    "service-worker.js": "/godested/resume/service-worker.js",
-    "static/css/3.764ccc25.chunk.css.map": "/godested/resume/static/css/3.764ccc25.chunk.css.map",
-    "static/css/completion.d94c2d7c.chunk.css.map": "/godested/resume/static/css/completion.d94c2d7c.chunk.css.map",
-    "static/css/main.b3918ccc.chunk.css.map": "/godested/resume/static/css/main.b3918ccc.chunk.css.map"
+    "completion.css": "https://godested.github.io/resume/static/css/completion.d94c2d7c.chunk.css",
+    "completion.js": "https://godested.github.io/resume/static/js/completion.09cf6f7f.chunk.js",
+    "completion.js.map": "https://godested.github.io/resume/static/js/completion.09cf6f7f.chunk.js.map",
+    "main.css": "https://godested.github.io/resume/static/css/main.b3918ccc.chunk.css",
+    "main.js": "https://godested.github.io/resume/static/js/main.42913ef3.chunk.js",
+    "main.js.map": "https://godested.github.io/resume/static/js/main.42913ef3.chunk.js.map",
+    "runtime-main.js": "https://godested.github.io/resume/static/js/runtime-main.2bf9e52d.js",
+    "runtime-main.js.map": "https://godested.github.io/resume/static/js/runtime-main.2bf9e52d.js.map",
+    "static/css/3.764ccc25.chunk.css": "https://godested.github.io/resume/static/css/3.764ccc25.chunk.css",
+    "static/js/3.ab14c5f7.chunk.js": "https://godested.github.io/resume/static/js/3.ab14c5f7.chunk.js",
+    "static/js/3.ab14c5f7.chunk.js.map": "https://godested.github.io/resume/static/js/3.ab14c5f7.chunk.js.map",
+    "static/js/4.332088ad.chunk.js": "https://godested.github.io/resume/static/js/4.332088ad.chunk.js",
+    "static/js/4.332088ad.chunk.js.map": "https://godested.github.io/resume/static/js/4.332088ad.chunk.js.map",
+    "index.html": "https://godested.github.io/resume/index.html",
+    "precache-manifest.b4d9568e0d6b386e26f2dd707ea577a1.js": "https://godested.github.io/resume/precache-manifest.b4d9568e0d6b386e26f2dd707ea577a1.js",
+    "service-worker.js": "https://godested.github.io/resume/service-worker.js",
+    "static/css/3.764ccc25.chunk.css.map": "https://godested.github.io/resume/static/css/3.764ccc25.chunk.css.map",
+    "static/css/completion.d94c2d7c.chunk.css.map": "https://godested.github.io/resume/static/css/completion.d94c2d7c.chunk.css.map",
+    "static/css/main.b3918ccc.chunk.css.map": "https://godested.github.io/resume/static/css/main.b3918ccc.chunk.css.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.f74565d3.js",
+    "static/js/runtime-main.2bf9e52d.js",
     "static/css/3.764ccc25.chunk.css",
     "static/js/3.ab14c5f7.chunk.js",
     "static/css/main.b3918ccc.chunk.css",
-    "static/js/main.69b825d4.chunk.js"
+    "static/js/main.42913ef3.chunk.js"
   ]
 }
