@@ -4,10 +4,15 @@
 .Section {
   height: 100%;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .Container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   position: relative;
   z-index: 1;
 }
@@ -18,6 +23,32 @@
 
 .Title {
   font-size: get-rem(14);
+  margin-bottom: get-rem(15);
+}
+
+.ContactsList {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.ContactsItem {
+  margin-right: 20px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.ContactsIcon {
+  display: block;
+  height: get-rem(16);
+}
+
+.ContactsLink {
+  font-size: 0;
+  display: block;
+  padding: 5px;
 }
 
 @include screenMd() {
@@ -28,6 +59,10 @@
   .Title {
     font-size: get-rem(22);
   }
+
+  .ContactsIcon {
+    height: get-rem(20);
+  }
 }
 
 @include screenLg() {
@@ -37,5 +72,9 @@
 
   .Title {
     font-size: get-rem(28);
+  }
+
+  .ContactsIcon {
+    height: get-rem(26);
   }
 }

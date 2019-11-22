@@ -1,6 +1,6 @@
 import * as THREE from 'three';
-import planeVS from 'core/shaders/planeVS';
-import planeFS from 'core/shaders/planeFS';
+import planeVS from './planeVS';
+import planeFS from './planeFS';
 
 type Resolution = [number, number];
 
