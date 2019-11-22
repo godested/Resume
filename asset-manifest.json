@@ -1,30 +1,32 @@
 {
   "files": {
-    "completion.css": "https://godested.github.io/resume/static/css/completion.d94c2d7c.chunk.css",
-    "completion.js": "https://godested.github.io/resume/static/js/completion.14195f15.chunk.js",
-    "completion.js.map": "https://godested.github.io/resume/static/js/completion.14195f15.chunk.js.map",
-    "main.css": "https://godested.github.io/resume/static/css/main.a28ce085.chunk.css",
-    "main.js": "https://godested.github.io/resume/static/js/main.1e6e3875.chunk.js",
-    "main.js.map": "https://godested.github.io/resume/static/js/main.1e6e3875.chunk.js.map",
-    "runtime-main.js": "https://godested.github.io/resume/static/js/runtime-main.a3c6e53a.js",
-    "runtime-main.js.map": "https://godested.github.io/resume/static/js/runtime-main.a3c6e53a.js.map",
+    "completion.css": "https://godested.github.io/resume/static/css/completion.68221dc2.chunk.css",
+    "completion.js": "https://godested.github.io/resume/static/js/completion.fe1f2282.chunk.js",
+    "completion.js.map": "https://godested.github.io/resume/static/js/completion.fe1f2282.chunk.js.map",
+    "main.css": "https://godested.github.io/resume/static/css/main.39026c23.chunk.css",
+    "main.js": "https://godested.github.io/resume/static/js/main.d29ef320.chunk.js",
+    "main.js.map": "https://godested.github.io/resume/static/js/main.d29ef320.chunk.js.map",
+    "runtime-main.js": "https://godested.github.io/resume/static/js/runtime-main.eea6fc5a.js",
+    "runtime-main.js.map": "https://godested.github.io/resume/static/js/runtime-main.eea6fc5a.js.map",
     "static/css/3.764ccc25.chunk.css": "https://godested.github.io/resume/static/css/3.764ccc25.chunk.css",
-    "static/js/3.c00eefe4.chunk.js": "https://godested.github.io/resume/static/js/3.c00eefe4.chunk.js",
-    "static/js/3.c00eefe4.chunk.js.map": "https://godested.github.io/resume/static/js/3.c00eefe4.chunk.js.map",
-    "static/js/4.d5e44c65.chunk.js": "https://godested.github.io/resume/static/js/4.d5e44c65.chunk.js",
-    "static/js/4.d5e44c65.chunk.js.map": "https://godested.github.io/resume/static/js/4.d5e44c65.chunk.js.map",
+    "static/js/3.dc6195ae.chunk.js": "https://godested.github.io/resume/static/js/3.dc6195ae.chunk.js",
+    "static/js/3.dc6195ae.chunk.js.map": "https://godested.github.io/resume/static/js/3.dc6195ae.chunk.js.map",
     "index.html": "https://godested.github.io/resume/index.html",
-    "precache-manifest.98aff20f974724e5eb02b14b76fbe512.js": "https://godested.github.io/resume/precache-manifest.98aff20f974724e5eb02b14b76fbe512.js",
+    "precache-manifest.1dd2c0621582b04f1ac803ddcc35a7d5.js": "https://godested.github.io/resume/precache-manifest.1dd2c0621582b04f1ac803ddcc35a7d5.js",
     "service-worker.js": "https://godested.github.io/resume/service-worker.js",
     "static/css/3.764ccc25.chunk.css.map": "https://godested.github.io/resume/static/css/3.764ccc25.chunk.css.map",
-    "static/css/completion.d94c2d7c.chunk.css.map": "https://godested.github.io/resume/static/css/completion.d94c2d7c.chunk.css.map",
-    "static/css/main.a28ce085.chunk.css.map": "https://godested.github.io/resume/static/css/main.a28ce085.chunk.css.map"
+    "static/css/completion.68221dc2.chunk.css.map": "https://godested.github.io/resume/static/css/completion.68221dc2.chunk.css.map",
+    "static/css/main.39026c23.chunk.css.map": "https://godested.github.io/resume/static/css/main.39026c23.chunk.css.map",
+    "static/media/email.ad42a435.svg": "https://godested.github.io/resume/static/media/email.ad42a435.svg",
+    "static/media/github.cd6d72f0.svg": "https://godested.github.io/resume/static/media/github.cd6d72f0.svg",
+    "static/media/linkedin.95d6da8d.svg": "https://godested.github.io/resume/static/media/linkedin.95d6da8d.svg",
+    "static/media/telegram.23572272.svg": "https://godested.github.io/resume/static/media/telegram.23572272.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.a3c6e53a.js",
+    "static/js/runtime-main.eea6fc5a.js",
     "static/css/3.764ccc25.chunk.css",
-    "static/js/3.c00eefe4.chunk.js",
-    "static/css/main.a28ce085.chunk.css",
-    "static/js/main.1e6e3875.chunk.js"
+    "static/js/3.dc6195ae.chunk.js",
+    "static/css/main.39026c23.chunk.css",
+    "static/js/main.d29ef320.chunk.js"
   ]
 }
