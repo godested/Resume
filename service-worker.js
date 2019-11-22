@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "https://godested.github.io/resume/precache-manifest.1dd2c0621582b04f1ac803ddcc35a7d5.js"
+  "https://godested.github.io/resume/precache-manifest.bf43bd3140758ac96ad2fb25f8ce798d.js"
 );
 
 self.addEventListener('message', (event) => {
