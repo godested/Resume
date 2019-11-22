@@ -9,7 +9,7 @@ const SIZE_X = 250;
 const SIZE_Y = 150;
 const SEGMENTS_X = 190;
 const SEGMENTS_Y = 100;
-const AMPLITUDE = 10.0;
+const AMPLITUDE = 10;
 const FREQUENCY = 0.05;
 const SLOWING_SPEED = 4600;
 
@@ -26,6 +26,7 @@ export function createCanvas(root: HTMLElement) {
   function onWindowResize() {
     renderer.setSize(root.clientWidth, root.clientHeight);
     composer.setSize(root.clientWidth, root.clientHeight);
+    scene.resize(root.clientWidth, root.clientHeight);
     plane.update(DELTA_TIME, [root.clientWidth, root.clientHeight]);
   }
 
