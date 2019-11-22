@@ -1,21 +1,21 @@
 {
   "files": {
-    "completion.css": "https://godested.github.io/resume/static/css/completion.68221dc2.chunk.css",
-    "completion.js": "https://godested.github.io/resume/static/js/completion.fe1f2282.chunk.js",
-    "completion.js.map": "https://godested.github.io/resume/static/js/completion.fe1f2282.chunk.js.map",
+    "home.css": "https://godested.github.io/resume/static/css/home.68221dc2.chunk.css",
+    "home.js": "https://godested.github.io/resume/static/js/home.fe1f2282.chunk.js",
+    "home.js.map": "https://godested.github.io/resume/static/js/home.fe1f2282.chunk.js.map",
     "main.css": "https://godested.github.io/resume/static/css/main.39026c23.chunk.css",
-    "main.js": "https://godested.github.io/resume/static/js/main.7a194d50.chunk.js",
-    "main.js.map": "https://godested.github.io/resume/static/js/main.7a194d50.chunk.js.map",
-    "runtime-main.js": "https://godested.github.io/resume/static/js/runtime-main.eea6fc5a.js",
-    "runtime-main.js.map": "https://godested.github.io/resume/static/js/runtime-main.eea6fc5a.js.map",
+    "main.js": "https://godested.github.io/resume/static/js/main.9adf2159.chunk.js",
+    "main.js.map": "https://godested.github.io/resume/static/js/main.9adf2159.chunk.js.map",
+    "runtime-main.js": "https://godested.github.io/resume/static/js/runtime-main.9864c03a.js",
+    "runtime-main.js.map": "https://godested.github.io/resume/static/js/runtime-main.9864c03a.js.map",
     "static/css/3.764ccc25.chunk.css": "https://godested.github.io/resume/static/css/3.764ccc25.chunk.css",
-    "static/js/3.dc6195ae.chunk.js": "https://godested.github.io/resume/static/js/3.dc6195ae.chunk.js",
-    "static/js/3.dc6195ae.chunk.js.map": "https://godested.github.io/resume/static/js/3.dc6195ae.chunk.js.map",
+    "static/js/3.24a78b18.chunk.js": "https://godested.github.io/resume/static/js/3.24a78b18.chunk.js",
+    "static/js/3.24a78b18.chunk.js.map": "https://godested.github.io/resume/static/js/3.24a78b18.chunk.js.map",
     "index.html": "https://godested.github.io/resume/index.html",
-    "precache-manifest.bf43bd3140758ac96ad2fb25f8ce798d.js": "https://godested.github.io/resume/precache-manifest.bf43bd3140758ac96ad2fb25f8ce798d.js",
+    "precache-manifest.54fbf69379c838afdf08411acedd0c03.js": "https://godested.github.io/resume/precache-manifest.54fbf69379c838afdf08411acedd0c03.js",
     "service-worker.js": "https://godested.github.io/resume/service-worker.js",
     "static/css/3.764ccc25.chunk.css.map": "https://godested.github.io/resume/static/css/3.764ccc25.chunk.css.map",
-    "static/css/completion.68221dc2.chunk.css.map": "https://godested.github.io/resume/static/css/completion.68221dc2.chunk.css.map",
+    "static/css/home.68221dc2.chunk.css.map": "https://godested.github.io/resume/static/css/home.68221dc2.chunk.css.map",
     "static/css/main.39026c23.chunk.css.map": "https://godested.github.io/resume/static/css/main.39026c23.chunk.css.map",
     "static/media/email.ad42a435.svg": "https://godested.github.io/resume/static/media/email.ad42a435.svg",
     "static/media/github.cd6d72f0.svg": "https://godested.github.io/resume/static/media/github.cd6d72f0.svg",
@@ -23,10 +23,10 @@
     "static/media/telegram.23572272.svg": "https://godested.github.io/resume/static/media/telegram.23572272.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.eea6fc5a.js",
+    "static/js/runtime-main.9864c03a.js",
     "static/css/3.764ccc25.chunk.css",
-    "static/js/3.dc6195ae.chunk.js",
+    "static/js/3.24a78b18.chunk.js",
     "static/css/main.39026c23.chunk.css",
-    "static/js/main.7a194d50.chunk.js"
+    "static/js/main.9adf2159.chunk.js"
   ]
 }
