@@ -20,18 +20,15 @@ interface Uniforms {
 interface Options {
   resolution: Resolution;
   amplitude: number;
+  radius: number;
   frequency: number;
-  sizeX: number;
-  sizeY: number;
-  segmentsX: number;
-  segmentsY: number;
   slowingSpeed: number;
 }
 
-export class Plane {
+export class Sphere {
   uniforms: Uniforms;
 
-  geometry: THREE.PlaneBufferGeometry;
+  geometry: THREE.SphereBufferGeometry;
 
   material: THREE.ShaderMaterial;
 
@@ -45,15 +42,14 @@ export class Plane {
       u_amplitude: { value: options.amplitude },
       u_frequency: { value: options.frequency },
       u_resolution: { value: options.resolution },
-      u_time: { value: 0.0 },
+      u_time: { value: 0 },
       /* eslint-enable */
     };
 
-    this.geometry = new THREE.PlaneBufferGeometry(
-      options.sizeX,
-      options.sizeY,
-      options.segmentsX,
-      options.segmentsY
+    this.geometry = new THREE.SphereBufferGeometry(
+      options.radius,
+      options.radius * 20,
+      options.radius * 20
     );
 
     this.material = new THREE.ShaderMaterial({
@@ -67,11 +63,14 @@ export class Plane {
     this.slowingSpeed = options.slowingSpeed;
 
     this.mesh = new THREE.Mesh(this.geometry, this.material);
-    this.mesh.rotation.x = 360;
   }
 
   update(dt: number, resolution: Resolution) {
     this.uniforms.u_time.value += dt / this.slowingSpeed;
+    this.mesh.rotation.y += dt / this.slowingSpeed / 2;
+    this.mesh.rotation.z += dt / this.slowingSpeed / 2;
+    this.mesh.rotation.x += dt / this.slowingSpeed / 2;
+
     this.uniforms.u_resolution.value = resolution;
   }
 }

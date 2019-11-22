@@ -6,6 +6,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
 }
 
 .Container {
@@ -24,6 +25,11 @@
 .Title {
   font-size: get-rem(14);
   margin-bottom: get-rem(15);
+}
+
+.ContactsContainer {
+  position: absolute;
+  top: 100%;
 }
 
 .ContactsList {

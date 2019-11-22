@@ -1,4 +1,5 @@
 import React, { ElementType } from 'react';
+import classNames from 'classnames';
 import { Wrapper } from 'core/components/Wrapper';
 import { ReactComponent as EmailIcon } from 'core/assets/icons/email.svg';
 import { ReactComponent as TelegramIcon } from 'core/assets/icons/telegram.svg';
@@ -18,7 +19,9 @@ export function Contacts() {
   const { contacts } = useResume();
 
   return (
-    <Wrapper className={classes.Container}>
+    <Wrapper
+      className={classNames(classes.Container, classes.ContactsContainer)}
+    >
       <ul className={classes.ContactsList}>
         {contacts.map(contact => {
           const Icon = ICONS_MAP[contact.name];

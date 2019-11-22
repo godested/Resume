@@ -11,7 +11,7 @@ export function Hero() {
   const { firstName, lastName, profession } = useResume();
 
   return (
-    <div className={classes.Section}>
+    <section className={classes.Section}>
       <Background />
       <Wrapper className={classes.Container}>
         <Typography
@@ -35,8 +35,8 @@ export function Hero() {
         >
           {profession}
         </Typography>
+        <Contacts />
       </Wrapper>
-      <Contacts />
-    </div>
+    </section>
   );
 }

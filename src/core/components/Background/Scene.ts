@@ -16,8 +16,8 @@ export class Scene extends THREE.Scene {
     });
     this.renderer.setSize(width, height);
 
-    this.cameraAspect = width / (height * 2.5);
-    this.camera = new THREE.PerspectiveCamera(55, this.cameraAspect, 1, 2000);
+    this.cameraAspect = width / height;
+    this.camera = new THREE.PerspectiveCamera(50, this.cameraAspect, 1, 2000);
     this.camera.position.z = 50;
   }
 
@@ -27,7 +27,7 @@ export class Scene extends THREE.Scene {
   }
 
   resize(newWidth: number, newHeight: number) {
-    this.camera.aspect = this.cameraAspect;
+    this.camera.aspect = newWidth / newHeight;
     this.camera.updateProjectionMatrix();
 
     this.renderer.setSize(newWidth, newHeight);

@@ -3,22 +3,19 @@ import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer
 import { GlitchPass } from 'three/examples/jsm/postprocessing/GlitchPass';
 import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass';
 import { Scene } from './Scene';
-import { Plane } from './Plane';
+import { Sphere } from './Plane';
 
-const SIZE_X = 250;
-const SIZE_Y = 150;
-const SEGMENTS_X = 190;
-const SEGMENTS_Y = 100;
-const AMPLITUDE = 10;
-const FREQUENCY = 0.05;
+const AMPLITUDE = 2;
+const FREQUENCY = 0.2;
 const SLOWING_SPEED = 4600;
+const RADIUS = 12;
 
 export function createCanvas(root: HTMLElement) {
   let renderer: THREE.WebGLRenderer;
   let composer: EffectComposer;
   let glitchPass: GlitchPass;
   let scene: Scene;
-  let plane: Plane;
+  let sphere: Sphere;
 
   let DELTA_TIME = 0;
   let LAST_TIME = Date.now();
@@ -27,7 +24,7 @@ export function createCanvas(root: HTMLElement) {
     renderer.setSize(root.clientWidth, root.clientHeight);
     composer.setSize(root.clientWidth, root.clientHeight);
     scene.resize(root.clientWidth, root.clientHeight);
-    plane.update(DELTA_TIME, [root.clientWidth, root.clientHeight]);
+    sphere.update(DELTA_TIME, [root.clientWidth, root.clientHeight]);
   }
 
   function init() {
@@ -37,18 +34,15 @@ export function createCanvas(root: HTMLElement) {
     composer = new EffectComposer(renderer);
 
     scene = new Scene(root.clientWidth, root.clientHeight);
-    plane = new Plane({
+    sphere = new Sphere({
       resolution: [root.clientWidth, root.clientHeight],
       amplitude: AMPLITUDE,
       frequency: FREQUENCY,
-      sizeX: SIZE_X,
-      sizeY: SIZE_Y,
-      segmentsX: SEGMENTS_X,
-      segmentsY: SEGMENTS_Y,
+      radius: RADIUS,
       slowingSpeed: SLOWING_SPEED,
     });
 
-    scene.add(plane.mesh);
+    scene.add(sphere.mesh);
 
     composer.addPass(new RenderPass(scene, scene.camera));
 
@@ -63,7 +57,7 @@ export function createCanvas(root: HTMLElement) {
     requestAnimationFrame(animate);
     DELTA_TIME = Date.now() - LAST_TIME;
     LAST_TIME = Date.now();
-    plane.update(DELTA_TIME, [root.clientWidth, root.clientHeight]);
+    sphere.update(DELTA_TIME, [root.clientWidth, root.clientHeight]);
     composer.render(DELTA_TIME);
   }
 
