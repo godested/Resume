@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import { useWindowSize } from 'core/hooks/useWindowSize';
 import { useScrollY } from 'core/hooks/useScroll';
-import { createGlitchCanvas } from './canvas';
+import { createCanvas } from './canvas';
 import classes from './styles.module.scss';
 
 export function Background() {
@@ -10,7 +10,7 @@ export function Background() {
   const scrollY = useScrollY();
 
   useEffect(() => {
-    const { init, animate, removeEventListeners } = createGlitchCanvas(
+    const { init, animate, removeEventListeners } = createCanvas(
       ref.current as HTMLElement
     );
 

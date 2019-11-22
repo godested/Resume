@@ -7,9 +7,9 @@ import { Background } from './Background';
 import classes from './styles.module.scss';
 
 export function Hero() {
-  const { lastname, firstname, profession } = useResume();
+  const { firstName, lastName, profession } = useResume();
 
-  const fullName = `${lastname} ${firstname}`;
+  const fullName = `${firstName} ${lastName}`;
 
   return (
     <div className={classes.Section}>

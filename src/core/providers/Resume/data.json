@@ -1,15 +1,15 @@
 {
-  "firstname": "Ilya",
-  "lastname": "Zaitsev",
+  "firstName": "Ilya",
+  "lastName": "Zaitsev",
   "avatar": "",
   "age": 21,
   "location": "",
   "profession": "Frontend Developer",
   "contacts": [
     {
-      "name": "Phone",
-      "type": "phone",
-      "value": "380684006684"
+      "name": "Telegram",
+      "type": "link",
+      "value": "https://t.me/godested"
     },
     {
       "name": "LinkedIn",

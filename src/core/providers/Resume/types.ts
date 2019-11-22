@@ -37,8 +37,8 @@ export interface BestProject {
 }
 
 export interface Resume {
-  firstname: string;
-  lastname: string;
+  firstName: string;
+  lastName: string;
   avatar: string;
   age: number;
   location: string;

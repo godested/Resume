@@ -11,7 +11,7 @@ import 'core/styles/global.scss';
 export function App() {
   return (
     <HelmetProvider>
-      <Helmet defaultTitle="Zaitsev Ilya" titleTemplate="%s | Zaitsev" />
+      <Helmet defaultTitle="godested" titleTemplate="%s | godested" />
       <BrowserRouter basename={BASEURL}>
         <ResumeProvider>
           <Layout>

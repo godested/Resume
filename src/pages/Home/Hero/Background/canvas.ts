@@ -13,7 +13,7 @@ const AMPLITUDE = 10.0;
 const FREQUENCY = 0.05;
 const SLOWING_SPEED = 4600;
 
-export function createGlitchCanvas(root: HTMLElement) {
+export function createCanvas(root: HTMLElement) {
   let renderer: THREE.WebGLRenderer;
   let composer: EffectComposer;
   let glitchPass: GlitchPass;

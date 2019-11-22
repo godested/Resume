@@ -1,5 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { getRandomInt, getRandomLetter, setRandomInterval } from './utils';
+import {
+  getRandomInt,
+  getRandomLetter,
+  setRandomInterval,
+  shuffle,
+} from './utils';
 import classes from './styles.module.scss';
 
 interface Options {
@@ -9,35 +14,50 @@ interface Options {
 }
 
 function useGlitch(string: string, options: Options = {}) {
-  const { min = 80, max = 120, duration = 20 } = options;
+  const { min = 200, max = 500, duration = 40 } = options;
   const [state, setState] = useState(string.split(''));
 
   const ref = useRef([...state]);
 
   useEffect(() => {
     const initialState = [...state];
-    const interval = setRandomInterval(
-      () => {
-        const letterIndex = getRandomInt(0, state.length - 1);
-        const newLetter = getRandomLetter();
 
+    function makeGlitch() {
+      const letterIndex = getRandomInt(0, state.length - 1);
+      const newLetter = getRandomLetter();
+
+      ref.current = ref.current.map((letter, index) =>
+        index === letterIndex ? newLetter : letter
+      );
+
+      setState(ref.current);
+
+      setTimeout(() => {
         ref.current = ref.current.map((letter, index) =>
-          index === letterIndex ? newLetter : letter
+          index === letterIndex ? initialState[index] : letter
         );
 
         setState(ref.current);
+      }, duration);
+    }
 
-        setTimeout(() => {
-          ref.current = ref.current.map((letter, index) =>
-            index === letterIndex ? initialState[index] : letter
-          );
+    function makeShuffle() {
+      ref.current = shuffle(initialState);
+      setState(ref.current);
 
-          setState(
-            ref.current.map((letter, index) =>
-              index === letterIndex ? initialState[index] : letter
-            )
-          );
-        }, duration);
+      setTimeout(() => {
+        ref.current = [...initialState];
+        setState(ref.current);
+      }, duration);
+    }
+
+    const interval = setRandomInterval(
+      () => {
+        if (Math.random() > 0.2) {
+          makeGlitch();
+        } else {
+          makeShuffle();
+        }
       },
       { min, max }
     );
