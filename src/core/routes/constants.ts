@@ -1,9 +1,11 @@
-import Home from 'pages/Home/Loadable';
+import loadableComponent from 'core/utils/loadableComponent';
 
 export const ROUTES = {
   HOME: {
     path: '/',
     exact: true,
-    component: Home,
+    component: loadableComponent(() =>
+      import(/* webpackChunkName: "home", webpackPrefetch: true */ 'pages/Home')
+    ),
   },
 };
