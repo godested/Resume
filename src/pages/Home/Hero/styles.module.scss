@@ -1,17 +1,7 @@
 @import 'core/styles/functions';
 @import 'core/styles/mixins';
 
-.Section {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-  opacity: 0;
-  animation: fade-in 1000ms ease-in-out forwards;
-}
-
-@keyframes fade-in {
+@keyframes in {
   from {
     opacity: 0;
   }
@@ -19,6 +9,16 @@
   to {
     opacity: 1;
   }
+}
+
+.Section {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  opacity: 0;
+  animation: in 1000ms ease-in-out forwards;
 }
 
 .Container {
