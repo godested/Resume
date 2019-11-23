@@ -5,7 +5,7 @@ import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass';
 import { Scene } from './Scene';
 import { Sphere } from './Plane';
 
-const AMPLITUDE = 2;
+const AMPLITUDE = 1.2;
 const FREQUENCY = 0.2;
 const SLOWING_SPEED = 4600;
 const RADIUS = 12;

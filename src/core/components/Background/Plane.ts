@@ -28,7 +28,7 @@ interface Options {
 export class Sphere {
   uniforms: Uniforms;
 
-  geometry: THREE.SphereBufferGeometry;
+  geometry: THREE.SphereGeometry;
 
   material: THREE.ShaderMaterial;
 
@@ -46,7 +46,7 @@ export class Sphere {
       /* eslint-enable */
     };
 
-    this.geometry = new THREE.SphereBufferGeometry(
+    this.geometry = new THREE.SphereGeometry(
       options.radius,
       options.radius * 20,
       options.radius * 20
@@ -56,7 +56,6 @@ export class Sphere {
       uniforms: this.uniforms,
       vertexShader: planeVS,
       fragmentShader: planeFS,
-      side: THREE.DoubleSide,
       wireframe: true,
     });
 
@@ -68,8 +67,8 @@ export class Sphere {
   update(dt: number, resolution: Resolution) {
     this.uniforms.u_time.value += dt / this.slowingSpeed;
     this.mesh.rotation.y += dt / this.slowingSpeed / 2;
-    this.mesh.rotation.z += dt / this.slowingSpeed / 2;
-    this.mesh.rotation.x += dt / this.slowingSpeed / 2;
+    this.mesh.rotation.z += dt / this.slowingSpeed / -2;
+    this.mesh.rotation.x += dt / this.slowingSpeed / 1.2;
 
     this.uniforms.u_resolution.value = resolution;
   }
