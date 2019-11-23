@@ -64,7 +64,7 @@ export function createCanvas(root: HTMLElement) {
   return {
     init,
     animate,
-    removeEventListeners() {
+    destroy() {
       window.removeEventListener('resize', onWindowResize);
     },
   };

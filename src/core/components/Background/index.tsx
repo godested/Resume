@@ -10,15 +10,13 @@ export function Background() {
   const scrollY = useScrollY();
 
   useEffect(() => {
-    const { init, animate, removeEventListeners } = createCanvas(
-      ref.current as HTMLElement
-    );
+    const { init, animate, destroy } = createCanvas(ref.current as HTMLElement);
 
     init();
     animate();
 
     return () => {
-      removeEventListeners();
+      destroy();
     };
   }, []);
 
