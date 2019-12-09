@@ -1,4 +1,4 @@
-import React, { ElementType, ReactNode } from 'react';
+import React, { ElementType, ReactNode, HTMLAttributes } from 'react';
 import classNames from 'classnames';
 import classes from './styles.module.scss';
 
@@ -13,7 +13,7 @@ const defaultComponentsMap = {
   base: 'span',
 };
 
-interface Props {
+interface Props extends HTMLAttributes<HTMLElement> {
   component?: ElementType;
   variant?:
     | 'heading'
@@ -36,6 +36,7 @@ interface Props {
   inline?: boolean;
   uppercase?: boolean;
   className?: string;
+  [otherProp: string]: unknown;
 }
 
 export function Typography(props: Props) {
