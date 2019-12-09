@@ -4,7 +4,6 @@ import { Glitch } from 'core/components/Glitch';
 import { Typography } from 'core/components/Typography';
 import { Wrapper } from 'core/components/Wrapper';
 import { Background } from 'core/components/Background';
-
 import classes from './styles.module.scss';
 
 export default function NotFound() {

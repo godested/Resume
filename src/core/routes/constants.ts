@@ -1,6 +1,7 @@
+import { RouteProps } from 'react-router-dom';
 import loadableComponent from 'core/utils/loadableComponent';
 
-export const ROUTES = {
+export const ROUTES: Readonly<Record<string, Readonly<RouteProps>>> = {
   HOME: {
     path: '/',
     exact: true,

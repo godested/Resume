@@ -6,12 +6,12 @@ import { ROUTES } from './constants';
 
 const routesToRender = Object.values(ROUTES);
 
-export function Router() {
+export function Routes() {
   return (
     <Switch>
       {routesToRender.map(route => (
         <Route
-          key={route.path}
+          key={Array.isArray(route.path) ? route.path[0] : route.path}
           exact={route.exact}
           path={route.path}
           component={route.component}

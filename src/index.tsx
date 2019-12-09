@@ -1,6 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
-import * as firebase from 'firebase';
+import * as firebase from 'firebase/app';
+import 'firebase/analytics';
 import * as serviceWorker from 'core/utils/serviceWorker';
 import { IS_DEV, FIREBASE_CONFIG } from 'core/utils/vars';
 import { App } from './App';
