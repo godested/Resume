@@ -10,7 +10,7 @@
   "bugs": {
     "url": "https://github.com/godested/resume/issues"
   },
-  "homepage": "https://github.com/godested/resume/#readme",
+  "homepage": "https://godested.gq",
   "scripts": {
     "commit": "lint-staged && node ./node_modules/.bin/git-cz",
     "start": "react-app-rewired start",
