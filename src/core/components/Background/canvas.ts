@@ -16,6 +16,7 @@ export function createCanvas(root: HTMLElement) {
   let glitchPass: GlitchPass;
   let scene: Scene;
   let sphere: Sphere;
+  let isRendering = true;
 
   let DELTA_TIME = 0;
   let LAST_TIME = Date.now();
@@ -54,6 +55,10 @@ export function createCanvas(root: HTMLElement) {
   }
 
   function animate() {
+    if (!isRendering) {
+      return;
+    }
+
     requestAnimationFrame(animate);
     DELTA_TIME = Date.now() - LAST_TIME;
     LAST_TIME = Date.now();
@@ -65,6 +70,7 @@ export function createCanvas(root: HTMLElement) {
     init,
     animate,
     destroy() {
+      isRendering = false;
       window.removeEventListener('resize', onWindowResize);
     },
   };

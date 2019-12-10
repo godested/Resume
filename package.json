@@ -54,7 +54,6 @@
   },
   "dependencies": {
     "@loadable/component": "^5.10.3",
-    "@types/classnames": "^2.2.9",
     "classnames": "^2.2.6",
     "firebase": "^7.5.2",
     "normalize.css": "^8.0.1",
@@ -66,6 +65,7 @@
   },
   "devDependencies": {
     "@types/jest": "^24.0.15",
+    "@types/classnames": "^2.2.9",
     "@types/loadable__component": "^5.10.0",
     "@types/react": "^16.8.23",
     "@types/react-dom": "^16.8.5",

@@ -39,15 +39,12 @@
   margin-bottom: get-rem(15);
 }
 
-.ContactsContainer {
-  position: absolute;
-  top: 100%;
-}
-
 .ContactsList {
   display: flex;
   list-style-type: none;
   padding: 0;
+  position: absolute;
+  top: 100%;
 }
 
 .ContactsItem {

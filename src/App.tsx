@@ -12,13 +12,13 @@ export function App() {
   return (
     <HelmetProvider>
       <Helmet defaultTitle="godested" titleTemplate="%s | godested" />
-      <Router basename={BASEURL}>
-        <ResumeProvider>
+      <ResumeProvider>
+        <Router basename={BASEURL}>
           <Layout>
             <Routes />
           </Layout>
-        </ResumeProvider>
-      </Router>
+        </Router>
+      </ResumeProvider>
     </HelmetProvider>
   );
 }

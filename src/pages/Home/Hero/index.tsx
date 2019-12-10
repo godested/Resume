@@ -17,7 +17,6 @@ export function Hero() {
         <Typography
           weight="medium"
           variant="heading"
-          align="center"
           component="h1"
           marginBottom="sm"
           uppercase
@@ -28,7 +27,6 @@ export function Hero() {
         </Typography>
         <Typography
           variant="subtitle"
-          align="center"
           uppercase
           weight="regular"
           className={classes.Title}

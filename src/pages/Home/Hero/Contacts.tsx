@@ -1,6 +1,4 @@
 import React, { ElementType } from 'react';
-import classNames from 'classnames';
-import { Wrapper } from 'core/components/Wrapper';
 import { ReactComponent as EmailIcon } from 'core/assets/icons/email.svg';
 import { ReactComponent as TelegramIcon } from 'core/assets/icons/telegram.svg';
 import { ReactComponent as LinkedInIcon } from 'core/assets/icons/linkedin.svg';
@@ -19,32 +17,28 @@ export function Contacts() {
   const { contacts } = useResume();
 
   return (
-    <Wrapper
-      className={classNames(classes.Container, classes.ContactsContainer)}
-    >
-      <ul className={classes.ContactsList}>
-        {contacts.map(contact => {
-          const Icon = ICONS_MAP[contact.name];
-          return (
-            <li key={contact.name} className={classes.ContactsItem}>
-              <a
-                className={classes.ContactsLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                title={contact.name}
-                href={
-                  contact.type === 'email'
-                    ? `mailto:${contact.value}`
-                    : contact.value
-                }
-              >
-                {contact.name}
-                <Icon fill="#fff" className={classes.ContactsIcon} />
-              </a>
-            </li>
-          );
-        })}
-      </ul>
-    </Wrapper>
+    <ul className={classes.ContactsList}>
+      {contacts.map(contact => {
+        const Icon = ICONS_MAP[contact.name];
+        return (
+          <li key={contact.name} className={classes.ContactsItem}>
+            <a
+              className={classes.ContactsLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              title={contact.name}
+              href={
+                contact.type === 'email'
+                  ? `mailto:${contact.value}`
+                  : contact.value
+              }
+            >
+              {contact.name}
+              <Icon fill="#fff" className={classes.ContactsIcon} />
+            </a>
+          </li>
+        );
+      })}
+    </ul>
   );
 }

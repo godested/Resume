@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   getRandomInt,
   getRandomLetter,
@@ -17,8 +17,6 @@ function useGlitch(string: string, options: Options = {}) {
   const { min = 200, max = 500, duration = 40 } = options;
   const [state, setState] = useState(string.split(''));
 
-  const ref = useRef([...state]);
-
   useEffect(() => {
     const initialState = [...state];
 
@@ -26,28 +24,31 @@ function useGlitch(string: string, options: Options = {}) {
       const letterIndex = getRandomInt(0, state.length - 1);
       const newLetter = getRandomLetter();
 
-      ref.current = ref.current.map((letter, index) =>
-        index === letterIndex ? newLetter : letter
+      setState(prevState =>
+        prevState.map((letter, index) =>
+          index === letterIndex ? newLetter : letter
+        )
       );
 
-      setState(ref.current);
-
       setTimeout(() => {
-        ref.current = ref.current.map((letter, index) =>
-          index === letterIndex ? initialState[index] : letter
+        setState(prevState =>
+          prevState.map((letter, index) =>
+            index === letterIndex ? initialState[index] : letter
+          )
         );
-
-        setState(ref.current);
       }, duration);
     }
 
     function makeShuffle() {
-      ref.current = shuffle(initialState);
-      setState(ref.current);
+      let stateBeforeShuffle: typeof state;
+
+      setState(prevState => {
+        stateBeforeShuffle = prevState;
+        return shuffle(prevState);
+      });
 
       setTimeout(() => {
-        ref.current = [...initialState];
-        setState(ref.current);
+        setState(stateBeforeShuffle);
       }, duration);
     }
 
