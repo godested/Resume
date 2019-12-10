@@ -1,21 +1,21 @@
 {
   "files": {
-    "home.css": "/static/css/home.e24ae894.chunk.css",
-    "home.js": "/static/js/home.e501b2fc.chunk.js",
-    "home.js.map": "/static/js/home.e501b2fc.chunk.js.map",
+    "home.css": "/static/css/home.d6b0903b.chunk.css",
+    "home.js": "/static/js/home.0d5f9178.chunk.js",
+    "home.js.map": "/static/js/home.0d5f9178.chunk.js.map",
     "main.css": "/static/css/main.39026c23.chunk.css",
-    "main.js": "/static/js/main.e6ab8b18.chunk.js",
-    "main.js.map": "/static/js/main.e6ab8b18.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.e0818719.js",
-    "runtime-main.js.map": "/static/js/runtime-main.e0818719.js.map",
+    "main.js": "/static/js/main.370cd609.chunk.js",
+    "main.js.map": "/static/js/main.370cd609.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.649c21f8.js",
+    "runtime-main.js.map": "/static/js/runtime-main.649c21f8.js.map",
     "static/css/3.764ccc25.chunk.css": "/static/css/3.764ccc25.chunk.css",
-    "static/js/3.92e33608.chunk.js": "/static/js/3.92e33608.chunk.js",
-    "static/js/3.92e33608.chunk.js.map": "/static/js/3.92e33608.chunk.js.map",
+    "static/js/3.99d49c2a.chunk.js": "/static/js/3.99d49c2a.chunk.js",
+    "static/js/3.99d49c2a.chunk.js.map": "/static/js/3.99d49c2a.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.d746f6b53b4d0ea6681a89b7363bef5d.js": "/precache-manifest.d746f6b53b4d0ea6681a89b7363bef5d.js",
+    "precache-manifest.009e300346a31dbc5fac56a76852642c.js": "/precache-manifest.009e300346a31dbc5fac56a76852642c.js",
     "service-worker.js": "/service-worker.js",
     "static/css/3.764ccc25.chunk.css.map": "/static/css/3.764ccc25.chunk.css.map",
-    "static/css/home.e24ae894.chunk.css.map": "/static/css/home.e24ae894.chunk.css.map",
+    "static/css/home.d6b0903b.chunk.css.map": "/static/css/home.d6b0903b.chunk.css.map",
     "static/css/main.39026c23.chunk.css.map": "/static/css/main.39026c23.chunk.css.map",
     "static/media/email.ad42a435.svg": "/static/media/email.ad42a435.svg",
     "static/media/github.cd6d72f0.svg": "/static/media/github.cd6d72f0.svg",
@@ -23,10 +23,10 @@
     "static/media/telegram.23572272.svg": "/static/media/telegram.23572272.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.e0818719.js",
+    "static/js/runtime-main.649c21f8.js",
     "static/css/3.764ccc25.chunk.css",
-    "static/js/3.92e33608.chunk.js",
+    "static/js/3.99d49c2a.chunk.js",
     "static/css/main.39026c23.chunk.css",
-    "static/js/main.e6ab8b18.chunk.js"
+    "static/js/main.370cd609.chunk.js"
   ]
 }
