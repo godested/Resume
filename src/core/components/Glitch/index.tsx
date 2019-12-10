@@ -18,10 +18,10 @@ function useGlitch(string: string, options: Options = {}) {
   const [state, setState] = useState(string.split(''));
 
   useEffect(() => {
-    const initialState = [...state];
+    const initialState = string;
 
     function makeGlitch() {
-      const letterIndex = getRandomInt(0, state.length - 1);
+      const letterIndex = getRandomInt(0, initialState.length - 1);
       const newLetter = getRandomLetter();
 
       setState(prevState =>
@@ -64,7 +64,7 @@ function useGlitch(string: string, options: Options = {}) {
     );
 
     return interval.clear;
-  }, []);
+  }, [string]);
 
   return state;
 }
