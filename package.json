@@ -61,7 +61,7 @@
     "react-dom": "^16.10.2",
     "react-helmet-async": "^1.0.4",
     "react-router-dom": "^5.1.2",
-    "three": "^0.110.0"
+    "three": "^0.125.0"
   },
   "devDependencies": {
     "@types/jest": "^24.0.15",
